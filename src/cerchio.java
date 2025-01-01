@@ -1,9 +1,11 @@
 public class cerchio extends punto {
-    private float raggio;
-
+    private static float raggio;
+    punto centro;
     // Costruttore
-    public cerchio(float pX, float pY, float raggio) {
-        super(pX, pY); // Chiamata al costruttore della classe base
+    public cerchio(punto p, float raggio) {
+
+        centro= new punto(p.getX(),p.getY());
+        // Chiamata al costruttore della classe base
         this.raggio = raggio;
     }
 
