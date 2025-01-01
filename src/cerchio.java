@@ -18,7 +18,7 @@ public class cerchio extends punto {
     }
 
     // Getter per il raggio
-    public float getRaggio() {
+    public static float getRaggio() {
         return raggio;
     }
 
